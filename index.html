@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title> Sara Monzó Fuentes</title>
+        <meta charset="utf-8">
+      <!-- Etiquetas de posicionamiento-->
+      <meta name="description" content="Web de Sara Monzó, aqui va lo que aparece debajo en el buscador">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Sara Monzó Fuentes">
+      <link rel="icon" href="lisasimpson.jpg" type="image/jpg">
+      <meta property="og:title" content="Sara Monzó Fuentes">
+      <meta property="og:description" content="Web de Sara Monzó">
+    <style>
+        /*
+            ttf = TrueTypeFont = Antiguo
+            otf = OpenTypeFont = Nuevo
+            woff = en desusp.
+        */
+        @font-face{
+            font-family:"Amoria";
+            src:url("AMORIA.otf");
+        }
+        h1{
+            color:crimson;
+            font-size: 50px;
+            font-family: Amoria;
+            text-align: center;
+
+        }
+        h2,h3{
+            color:crimson;
+            font-family:Amoria;
+            font-size:35px;
+            text-align: center;
+        }
+        body{
+            background:cornsilk;
+            font-size: 18px ;
+        }
+        header,main,footer{
+            width:600px; /*Establece la anchura de los elementos*/
+            background:rosybrown; /*Establece el fondo de los elementos*/
+            margin:auto; /*Céntralo en pantalla*/
+            padding:15px; /* Pon un poco de margen inferior */
+        }
+        nav ul{
+          list-style-type: none; /*Anula estilos de lista*/
+          margin: 0px;/*anula el margen exterior por defecto*/
+          padding: 0px;/*Anula el margen interior por defecto*/
+          display: flex;
+          gap: 10px;
+          justify-content:center; /*Centrar los elementos de menú*/
+        }
+        nav ul li a{
+          text-decoration: none; /*Anula los estilos de subrayado*/
+          color: inherit; /*El color que va a tener*/
+          color: white;/*Color de las letras*/
+          background: rosybrown;/*Color de fondo*/
+          padding: 5px;
+          font-size: 10px; /*Tamaño de la fuente*/
+          text-transform:uppercase; /*Texto en mayúsculas*/
+          display:block;/*Permito a los elementos que sean bloques*/
+          width:60px;/*Su anchura es de x píxeles*/
+          text-align:center;/*Alineo el texto al centro*/
+        }
+        #inicio img{
+            width: 100%;
+        }
+        .bloque{
+            display:flex;
+            gap: 20px;;
+        }
+        .bloque img{
+            flex:1; /**/
+            width: 50px; /**/
+            height: 50%; /**/
+        }
+        .bloque p{
+            flex: 1; /**/
+            font-size: 10px; /**/
+            text-align: justify; /**/
+        }
+        #desarrollo .bloque{
+            flex-direction: row-reverse; /*invertimos el orden*/
+        }
+        #contenedorportfolio{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+        }
+        #contenedorportfolio img{
+            width: 100%; /*Quiero que la imagen no desborde*/
+        }
+        iframe{
+          flex:1;
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+        }
+    </style> 
+    </head>
+    <body>
+    </body>
+        <header>
+            <!-- Esto es la cabecera de la página-->
+             <h1>Sara Monzó Fuentes</h1>
+             <h2>Alumna de primero de DAW</h2>
+             <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <li><a href="#aprendizaje">Aprendizaje</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+             </nav>
+        </header>
+
+        <main>
+            <!-- Esto es el contenido principal-->
+        <section id="inicio">
+          <h3>Inicio</h3>
+          <p>Bienvenido, sientate al lado de Shakira programadora.</p>
+          <img src="https://i.pinimg.com/736x/61/e7/8b/61e78b38b7ba772166c4927d56dbb27f.jpg" alt="Yo">
+        </section>
+        <section id="sobremi">
+          <h3>Sobre mí</h3>
+          <p>Tengo 24 años y estoy aprendiendo a programar. Me gusta dibujar y leer novelas.</p>
+        </section>
+        <section id="aprendizaje">
+          <h3>Aprendizaje</h3>
+          <div class="bloque">
+            <img src="kuromi.jpg">
+            <p>Este bichillo tan bonico se llama Kuromi</p>
+            <img src="kuromi.jpg">
+            <p>Este bichillo tan bonico se llama Kuromi</p>
+            <img src="kuromi.jpg">
+            <p>Este bichillo tan bonico se llama Kuromi</p>
+          </div>
+          </section>
+        <section id="portfolio">
+          <h3>Portfolio</h3>
+          <div id="portfolio">
+            <article>
+                <h4>Elemento de portfolio</h4>
+                <p>Mi personaje favorito de los simpsons es Lisa</p>
+                <img src="lisasimpson.jpg">
+            </article>
+            <article>
+                <h4>Elemento de portfolio</h4>
+                <p>Me gustan los cacahuetes</p>
+                <img src="lisasimpson.jpg">
+            </article>
+          </div>
+        </section>
+        <section id="contacto">
+        <div class="bloque">
+          <h3>Contacto</h3>
+          <p>Teléfono: 654041754 <br>
+            Instagram: sarimonfi <br>
+            E-mail: sarimonfi@lokilo.com <br>
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2588.7455410955317!2d-0.40958971899396507!3d39.50197051035882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1759912146314!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <form>
+                <label for="nombre">Introduce tu nombre</label>
+                <input type="text" id="nombre">
+                <label for="email">Introduce tu email</label>
+                <input type="email" id="email">
+                <label for="mensaje">Introduce tu mensaje</label>
+                <textarea id="mensaje"></textarea>
+                <input type="submit">
+          </form>
+        </div>
+        </section>
+       
+        </main>
+        <footer>
+            <!-- Esto es el pie de página-->
+             <a href="https://github.com/samonzfu">GitHub</a>
+             <a href="www.linkedin.com/in/sara-monzó-fuentes">LinkedIn</a>
+
+        </footer>
+</html>
