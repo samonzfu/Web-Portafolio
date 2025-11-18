@@ -8,24 +8,27 @@
     src:url("AMORIA.otf");
 }
 h1{
-    color:crimson;
+    color:darkolivegreen;
     font-size: 50px;
     font-family: Amoria;
     text-align: center;
 }
 h2,h3{
-    color:crimson;
+    color:darkolivegreen;
     font-family:Amoria;
     font-size:35px;
     text-align: center;
 }
 body{
-    background:cornsilk;
+    background-image:url("https://cdn.pixabay.com/photo/2025/04/25/09/35/pastel-9558204_1280.png") ;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
     font-size: 18px ;
 }
 header,main,footer{
     width:600px; /*Establece la anchura de los elementos*/
-    background:rosybrown; /*Establece el fondo de los elementos*/
+    background:darkseagreen; /*Establece el fondo de los elementos*/
     margin:auto; /*Céntralo en pantalla*/
     padding:15px; /* Pon un poco de margen inferior */
 }
@@ -40,8 +43,8 @@ nav ul{
 nav ul li a{
     text-decoration: none; /*Anula los estilos de subrayado*/
     color: inherit; /*El color que va a tener*/
-    color: white;/*Color de las letras*/
-    background: rosybrown;/*Color de fondo*/
+    color: lightgreen;/*Color de las letras*/
+    background: darkolivegreen;/*Color de fondo*/
     padding: 5px;
     font-size: 10px; /*Tamaño de la fuente*/
     text-transform:uppercase; /*Texto en mayúsculas*/
