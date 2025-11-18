@@ -8,7 +8,7 @@
     src:url("AMORIA.otf");
 }
 h1{
-    color:darkolivegreen;
+    color:lightcoral;
     font-size: 50px;
     font-family: Amoria;
     text-align: center;
@@ -28,7 +28,7 @@ body{
 }
 header,main,footer{
     width:600px; /*Establece la anchura de los elementos*/
-    background:darkseagreen; /*Establece el fondo de los elementos*/
+    background:lightgoldenrodyellow; /*Establece el fondo de los elementos*/
     margin:auto; /*Céntralo en pantalla*/
     padding:15px; /* Pon un poco de margen inferior */
 }
