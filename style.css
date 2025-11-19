@@ -3,8 +3,8 @@
     otf = OpenTypeFont = Nuevo
     woff = en desusp.
 */
-@font-face{
-    font-family:"Amoria";
+@font-face{ 
+    font-family:"Amoria"; /*CAMBIAR FUENTE X PIXEL*/
     src:url("AMORIA.otf");
 }
 h1{
@@ -27,7 +27,7 @@ body{
     font-size: 18px ;
 }
 header,main,footer{
-    width:600px; /*Establece la anchura de los elementos*/
+    width:800px; /*Establece la anchura de los elementos*/
     background:lightgoldenrodyellow; /*Establece el fondo de los elementos*/
     margin:auto; /*Céntralo en pantalla*/
     padding:15px; /* Pon un poco de margen inferior */
