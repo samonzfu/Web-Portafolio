@@ -1,0 +1,102 @@
+/*
+    ttf = TrueTypeFont = Antiguo
+    otf = OpenTypeFont = Nuevo
+    woff = en desusp.
+*/
+@font-face{ 
+    font-family:"Amoria"; /*este es el nombre interno*/
+    src:url(AMORIA.otf);/*el nombre del archivo*/
+}
+h1{
+    color:lightcoral;
+    font-size: 50px;
+    font-family: Amoria;
+    text-align: center;
+}
+h2,h3{
+    color:darkolivegreen;
+    font-family:Amoria;
+    font-size:35px;
+    text-align: center;
+}
+body{
+    background-image:url("https://i.pinimg.com/originals/9d/64/03/9d640388f67c6debf1f1fb5b40f8c990.gif") ;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+    font-size: 18px ;
+}
+
+/*ESTO LO RECOGE TODO*/
+header,main,footer{
+    width:800px; /*Establece la anchura de los elementos*/
+    background:lightgoldenrodyellow; /*Establece el fondo de los elementos*/
+    margin:auto; /*Céntralo en pantalla*/
+    padding:15px; /* Pon un poco de margen inferior */
+}
+nav ul{
+    list-style-type: none; /*Anula estilos de lista*/
+    margin: 0px;/*anula el margen exterior por defecto*/
+    padding: 0px;/*Anula el margen interior por defecto*/
+    display: flex;
+    gap: 10px;
+    justify-content:center; /*Centrar los elementos de menú*/
+}
+nav ul li a{
+    text-decoration: none; /*Anula los estilos de subrayado*/
+    color: inherit; /*El color que va a tener*/
+    color: lightgreen;/*Color de las letras*/
+    background: darkolivegreen;/*Color de fondo*/
+    padding: 5px;
+    font-size: 10px; /*Tamaño de la fuente*/
+    text-transform:uppercase; /*Texto en mayúsculas*/
+    display:block;/*Permito a los elementos que sean bloques*/
+    width:60px;/*Su anchura es de x píxeles*/
+    text-align:center;/*Alineo el texto al centro*/
+}
+#inicio img{
+    width: 100%;
+}
+.bloque{
+    display:flex;
+    gap: 20px;;
+}
+.bloque img{
+    width: 120px; /**/
+    height: auto; /**/
+}
+.bloque p{
+    flex: 1; /**/
+    font-size: 10px; /**/
+    text-align: justify; /**/
+}
+.bloque {
+    flex-direction: column;
+    background: #fff8dc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000020;
+    transition: transform .2s;
+}
+
+.bloque:hover {
+    transform: translateY(-10px);
+}
+#desarrollo .bloque{
+    flex-direction: row-reverse; /*invertimos el orden*/
+}
+#contenedorportfolio{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+#contenedorportfolio img{
+    width: 100%; /*Quiero que la imagen no desborde*/
+}
+iframe{
+    flex:1;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}

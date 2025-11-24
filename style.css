@@ -1,88 +1,67 @@
-/*
-    ttf = TrueTypeFont = Antiguo
-    otf = OpenTypeFont = Nuevo
-    woff = en desusp.
-*/
-@font-face{ 
-    font-family:"Amoria"; /*CAMBIAR FUENTE X PIXEL*/
-    src:url("AMORIA.otf");
+/*FUENTES*/
+@font-face {
+    font-family: "pixelmax_hueco";
+    src: url(Pixelmax-Outline.otf);
 }
-h1{
-    color:lightcoral;
-    font-size: 50px;
-    font-family: Amoria;
-    text-align: center;
+@font-face {
+    font-family: "pixelmax";
+    src: url(Pixelmax-Regular.otf);
 }
-h2,h3{
-    color:darkolivegreen;
-    font-family:Amoria;
-    font-size:35px;
-    text-align: center;
+@font-face {
+    font-family: "pixel_botones";
+    src: url(dogicapixel.otf);
 }
-body{
-    background-image:url("https://i.pinimg.com/originals/9d/64/03/9d640388f67c6debf1f1fb5b40f8c990.gif") ;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-attachment: scroll;
-    font-size: 18px ;
+@font-face {
+    font-family: pixel_texto ;
+    src: url(Pixellari.ttf);
 }
+
 header,main,footer{
     width:800px; /*Establece la anchura de los elementos*/
     background:lightgoldenrodyellow; /*Establece el fondo de los elementos*/
     margin:auto; /*Céntralo en pantalla*/
     padding:15px; /* Pon un poco de margen inferior */
 }
+/*FONDO*/
+body{
+    background-image: url(https://i.pinimg.com/originals/9d/64/03/9d640388f67c6debf1f1fb5b40f8c990.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-size: 18px;
+    font-family: pixel_texto;
+}
+
+h1{
+    color:lightcoral;
+    font-size: 50px;
+    font-family: pixelmax_hueco;
+    text-align: center;
+}
 nav ul{
-    list-style-type: none; /*Anula estilos de lista*/
-    margin: 0px;/*anula el margen exterior por defecto*/
-    padding: 0px;/*Anula el margen interior por defecto*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     gap: 10px;
-    justify-content:center; /*Centrar los elementos de menú*/
+    justify-content: center;
+    
 }
 nav ul li a{
-    text-decoration: none; /*Anula los estilos de subrayado*/
-    color: inherit; /*El color que va a tener*/
-    color: lightgreen;/*Color de las letras*/
-    background: darkolivegreen;/*Color de fondo*/
+    text-decoration: none;
+    color: lightgreen;
+    font-family: pixel_botones;
+    background-color: darkolivegreen;
     padding: 5px;
-    font-size: 10px; /*Tamaño de la fuente*/
-    text-transform:uppercase; /*Texto en mayúsculas*/
-    display:block;/*Permito a los elementos que sean bloques*/
-    width:60px;/*Su anchura es de x píxeles*/
-    text-align:center;/*Alineo el texto al centro*/
+    font-size: 10px;
+    
 }
-#inicio img{
-    width: 100%;
+h2,h3{
+    color: lightcoral;
+    font-family:pixelmax;
+    font-size: 35px;
+    text-align: center;
 }
-.bloque{
-    display:flex;
-    gap: 20px;;
-}
-.bloque img{
-    width: 120px; /**/
-    height: auto; /**/
-}
-.bloque p{
-    flex: 1; /**/
-    font-size: 10px; /**/
-    text-align: justify; /**/
-}
-#desarrollo .bloque{
-    flex-direction: row-reverse; /*invertimos el orden*/
-}
-#contenedorportfolio{
-    display:grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-}
-#contenedorportfolio img{
-    width: 100%; /*Quiero que la imagen no desborde*/
-}
-iframe{
-    flex:1;
-}
-form{
-    display:flex;
-    flex-direction: column;
-}
+#inicio{text-align: center;}
+#sobremi{text-align: center;}
+form{display: flex;flex-direction: column;}
