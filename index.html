@@ -12,40 +12,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="comportamiento.js"></script>
-</body>
-<header>
-  <h1>PORTAFOLIO</h1>
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobremi">Sobre mi</a></li>
-      <li><a href="#aprendizaje">Aprendizaje</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#redes">Redes sociales</a></li>
-    </ul>
-  </nav>
-</header>
+<h1>PORTAFOLIO</h1>
+<nav>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobremi">Sobre mi</a></li>
+    <li><a href="#aprendizaje">Aprendizaje</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#redes">Redes sociales</a></li>
+  </ul>
+</nav>
+
 <main>
   <section id="inicio">
     <h3>Inicio</h3>
-      <p>Bienvenido, en esta web encontrarás un pequeño resumen de mi aprendizaje
-        durante el primer año del grado superior "Desarrollo de Aplicaciones Web" tales como:
-        Los lenguajes de programación que estoy utilizando y qué he ido viendo con ellos, mis trabajos de clase
-          y mis proyectos personales.
-      </p>
+    <p>Bienvenido, en esta web encontrarás un pequeño resumen de mi aprendizaje durante el primer año del grado superior "Desarrollo de Aplicaciones Web", tales como los lenguajes de programación que estoy utilizando, mis trabajos de clase y mis proyectos personales.</p>
   </section>
+
   <section id="sobremi">
     <h3>Sobre mí</h3>
-          <p>Tengo 24 años comencé este año a desarrollar el gusto por la programación web y me 
-            quiero dedicar a ello. HOBBIES. CLASE. ETC
-          </p>
-          <img src="" alt="Yo">
+    <p>Tengo 24 años y comencé este año a desarrollar el gusto por la programación web. Me quiero dedicar a ello.</p>
+    <img src="" alt="Yo">
   </section>
+
   <section id="aprendizaje">
     <h3>Aprendizaje</h3>
-    <!-- FRONTEND -->
+    
     <h4>LENGUAJES DE MARCAS</h4>
     <div class="categoria"> 
       <div class="bloque">
@@ -61,7 +54,7 @@
         <p>información sobre lo realizado</p>
       </div>
     </div>
-    <!--PROGRAMACIÓN-->
+
     <h4>PROGRAMACIÓN</h4>
     <div class="categoria">
       <div class="bloque">
@@ -73,60 +66,74 @@
         <p>información sobre lo realizado</p>
       </div>
     </div>
-    <!--BBDD-->
+
     <h4>BASES DE DATOS</h4>
     <div class="categoria">
       <div class="bloque">
         <img src="https://cdn.prod.website-files.com/66754aa69a5d872183713f9c/672dfced5422c158fb5a6002_mysql%20logo.png">
         <p>información sobre lo realizado</p>
-        </div>
+      </div>
     </div>
   </section>
+
   <section id="proyectos">
     <h3>Proyectos personales</h3>
-      <div id="contenedorproyectos">
-        <article>
-          <h4>Capítulo a Capítulo</h4>
-          <p>Mi primer proyecto, creado usando HTML, CSS y JavaScript. Sigue en constante progreso.</p>
-          <img src="book.png">
-          <a href="https://samonzfu.github.io/web-libreria/">DESCUBRE MI PROYECTO</a>
-        </article>
-        <article>
-          <h4>Currículum Vitae</h4>
-          <p>Me gustan los cacahuetes</p>
-          <img src="cv.png">
-        </article>
-        <article>
-          <h4>Portafolio</h4>
-          <p>Me gustan los cacahuetes</p>
-          <img src="portfolio.png">
-        </article>
-        <article>
-          <h4>***EJEMPLO DE ELEMENTO***</h4>
-          <p>***EJEMPLO DE DESCRIPCIÓN***</p>
-          <img src="wip.png">
-        </article>
-      </div>
+    <div id="contenedorproyectos">
+      <article>
+        <h4>Capítulo a Capítulo</h4>
+        <p>Mi primer proyecto, creado usando HTML, CSS y JavaScript. Sigue en constante progreso.</p>
+        <img src="book.png">
+        <a href="https://samonzfu.github.io/web-libreria/">DESCUBRE MI PROYECTO</a>
+      </article>
+      <article>
+        <h4>Currículum Vitae</h4>
+        <p>Me gustan los cacahuetes</p>
+        <img src="cv.png">
+      </article>
+      <article>
+        <h4>Portafolio</h4>
+        <p>Me gustan los cacahuetes</p>
+        <img src="portfolio.png">
+      </article>
+      <article>
+        <h4>***EJEMPLO DE ELEMENTO***</h4>
+        <p>***EJEMPLO DE DESCRIPCIÓN***</p>
+        <img src="wip.png">
+      </article>
+    </div>
   </section>
+
   <section id="redes">
     <h3>Redes Sociales</h3>
-      <p>Aquí te dejo los links que te llevarán a mis redes sociales</p>
-      <a href="https://github.com/samonzfu">GitHub</a>
-      <a href="www.linkedin.com/in/sara-monzó-fuentes">LinkedIn</a>
+    <p>Aquí te dejo los links que te llevarán a mis redes sociales</p>
+    <a href="https://github.com/samonzfu">GitHub</a>
+    <a href="www.linkedin.com/in/sara-monzó-fuentes">LinkedIn</a>
   </section>
+
   <section id="contacto">
     <h3>Contacto</h3>
     <p>Para contactarme rellena el siguiente formulario:</p>
-      <form>
-        <label for="nombre">Introduce tu nombre</label>
-        <input type="text" id="nombre">
-        <label for="email">Introduce tu email</label>
-        <input type="email" id="email">
-        <label for="mensaje">Introduce tu mensaje</label>
-        <textarea id="mensaje"></textarea>
-        <input type="submit">
-      </form>   
+    <form>
+      <label for="nombre">Introduce tu nombre</label>
+      <input type="text" id="nombre">
+      <label for="email">Introduce tu email</label>
+      <input type="email" id="email">
+      <label for="mensaje">Introduce tu mensaje</label>
+      <textarea id="mensaje"></textarea>
+      <input type="submit">
+    </form>
   </section>
 </main>
+
 <footer>(c) 2025 Sara Monzó Fuentes</footer>
+
+<script>
+  const bloques = document.querySelectorAll(".bloque");
+  bloques.forEach(bloque => {
+    bloque.addEventListener("click", () => {
+      bloque.classList.toggle("rotar");
+    });
+  });
+</script>
+</body>
 </html>
